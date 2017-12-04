@@ -28,11 +28,11 @@
               <label for="symptom">Find a doctor for your symptom:</label>
               <input type="text" id="symptom" placeholder="Please enter your primary symptom here">
             </div>
-            <div class="input-field col s2">
+            <div class="input-field col s4">
               <button type="submit" class="waves-effect waves-light btn" name="button">Search for a doctor!</button>
             </div>
             <div class="input-field col s2">
-              <button type="click" id="hide-symptoms" name="button">Hide your symptoms</button>
+              <button type="click" id="hide-symptoms" class="waves-effect waves-light btn" name="button">Hide your symptoms</button>
             </div>
           </div>
         </form>
@@ -41,21 +41,21 @@
         <div class="symptom"></div>
         <div class="doctorList"></div>
       </div>
+      <div class="card">
+        <h3>Find a specific doctor:</h3>
+        <form id="find-doctor" action="index.html" method="post">
+          <div class="row">
+            <div class="input-field col s7">
+              <label for="doctors">Find a doctor by name</label>
+              <input type="text" name="doctors" id="doctor-name" placeholder="Enter doctor's name">
+            </div>
+            <div class="input-field col s5">
+              <button type="submit" class="waves-effect waves-light btn" name="button">Search Doctors</button>
+            </div>
+          </div>
+        </form>
+        <div id="doctorListNames"></div>
     </div>
-    <div class="card">
-      <h3>Find a specific doctor:</h3>
-      <form id="find-doctor" action="index.html" method="post">
-        <div class="row">
-          <div class="input-field col s7">
-            <label for="doctors">Find a doctor by name</label>
-            <input type="text" name="doctors" id="doctor-name" placeholder="Enter doctor's name">
-          </div>
-          <div class="input-field col s5">
-            <button type="submit" class="waves-effect waves-light btn" name="button">Search Doctors</button>
-          </div>
-        </div>
-      </form>
-      <div id="doctorListNames"></div>
     </div>
   </body>
 </html>
