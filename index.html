@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <script src="build/js/vendor.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/flick/jquery-ui.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <title>Doctor Lookup in the Seattle area!</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h2>Find a doctor in your area!</h2>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <h3>Enter information here!</h3>
+        <form id="search-symptom" action="index.html" method="post">
+          <div class="row">
+            <div class="input-field col s7">
+              <label for="symptom">Find a doctor for your symptom:</label>
+              <input type="text" id="symptom" placeholder="Please enter your primary symptom here">
+            </div>
+            <div class="input-field col s2">
+              <button type="submit" class="waves-effect waves-light btn" name="button">Search for a doctor!</button>
+            </div>
+            <div class="input-field col s2">
+              <button type="click" id="hide-symptoms" name="button">Hide your symptoms</button>
+            </div>
+          </div>
+        </form>
+        <br>
+        <br>
+        <div class="symptom"></div>
+        <div class="doctorList"></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Find a specific doctor:</h3>
+      <form id="find-doctor" action="index.html" method="post">
+        <div class="row">
+          <div class="input-field col s7">
+            <label for="doctors">Find a doctor by name</label>
+            <input type="text" name="doctors" id="doctor-name" placeholder="Enter doctor's name">
+          </div>
+          <div class="input-field col s5">
+            <button type="submit" class="waves-effect waves-light btn" name="button">Search Doctors</button>
+          </div>
+        </div>
+      </form>
+      <div id="doctorListNames"></div>
+    </div>
+  </body>
+</html>
